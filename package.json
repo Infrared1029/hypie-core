@@ -1,0 +1,40 @@
+{
+  "name": "hypie-core",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./modifiers": {
+      "types": "./dist/modifiers.d.ts",
+      "default": "./src/modifiers.js"
+    },
+    "./dom": {
+      "types": "./dist/dom.d.ts",
+      "default": "./src/dom.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infrared1029/hypie-core.git"
+  },
+  "description": "Behaviors for server-rendered HTML: named by data-hp-install, started on insertion, stopped (AbortSignal) on removal",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "idiomorph": "^0.8.0"
+  }
+}
